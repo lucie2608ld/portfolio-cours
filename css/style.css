@@ -1,0 +1,10 @@
+.bande {
+  background-color: rgb(148, 113, 113);
+  padding: 20px;
+}
+
+.bande a {
+  color: rgb(255, 0, 0);
+  margin-right: 20px;
+  text-decoration: none;
+}
