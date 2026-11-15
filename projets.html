@@ -3,21 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-
+    <title>Mon Portfolio - Projets</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
-        <nav>
-            <span><strong>Portfolio Lucie Dufour</strong></span>
-            <a href="index.html">Accueil</a>
-            <a href="cv.html">CV</a>
-            <a href="projets.html">Projets</a>
-            <a href="contact.html">Contact</a>
+<body class="bg-slate-50 text-slate-800 font-sans">
+
+    <header id="main-header" class="bg-slate-900 text-white p-4 shadow-md">
+        <nav class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+            <h1 class="text-xl font-bold tracking-tight">Mon Portfolio</h1>
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="hover:text-blue-400 transition-colors">Accueil</a></li>
+                <li><a href="cv.html" class="hover:text-blue-400 transition-colors">CV</a></li>
+                <li><a href="projets.html" class="hover:text-blue-400 transition-colors" aria-current="page">Projets</a></li>
+                <li><a href="contact.html" class="hover:text-blue-400 transition-colors">Contact</a></li>
+            </ul>
         </nav>
-
-
     </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-12">
+        <h1 class="text-3xl font-bold text-slate-900">Mes réalisations</h1>
+        
+    
+<section class="grid-projets grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+    <article class="card bg-white rounded-xl shadow-md overflow-hidden border border-slate-100 hover:shadow-xl transition-shadow">
+        <img class="w-full h-48 object-cover" src="image/mario.png" alt="Capture d'écran de mon projet">
+        <section class="p-5">
+            <h2 class="text-lg font-bold text-slate-900 mb-2">Illustrator</h2>
+            <p class="text-slate-600 text-sm mb-4">Faire un peu comme l'univer mario.</p>
+        </section>
+    </article>
+</section>
+
+
+
+    </main>
+
+    <footer class="bg-slate-900 text-slate-300 text-center text-sm py-6 px-8 mt-12">
+        <p>&copy; 2026 Dufour Lucie - <a href="contact.html" class="underline hover:text-blue-400">Contact</a></p>
+    </footer>
+
 </body>
 </html>
